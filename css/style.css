@@ -193,6 +193,10 @@ body {
     margin-right: 10px;
 }
 
+.mr-30 {
+    margin-right: 30px;
+}
+
 .mb-10 {
     margin-bottom: 10px;
 }
@@ -274,4 +278,67 @@ body {
         bottom: 20px;
         right: 20px;
     }
+}
+
+.medium-header {
+    font-size: 35px;
+}
+
+.card-brand {
+    width: 227px;
+    height: 117px;
+    border-radius: 16px;
+    background: var(--darkgrey2);
+    text-align: center;
+}
+
+.card-brand .logo {
+    height: 50px;
+    margin-top: 30px;
+}
+
+.carousel-wrapper {
+    display: flex;
+    height: 110px;
+    animation: moveSlidesToLeft 25s linear infinite;
+}
+
+.carousel {
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: row;
+    height: 120px;
+    overflow: hidden;
+}
+
+@keyframes moveSlidesToLeft {
+    0% {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes moveSlidesToRight {
+    0% {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+.carousel-wrapper-left {
+    display: flex;
+    height: 110px;
+    animation: moveSlidesToRight 25s linear infinite;
+}
+
+.carousel-left {
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: row;
+    height: 110px;
+    overflow: hidden;
 }
